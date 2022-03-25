@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Счетчик калорий</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="description" content="Подсчет ваших калорий через ваш рост, возраст и уровнем активности жизни">
+	<meta name="keywords" content="калории, здоровая жизнь, активность">
+	<link rel="shortcut icon" type="image/x-icon" href="Health.ico">
+	<link type="text/css" rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<section id='wrapper'>
+		<div>
+			<h2 class="gender">Пол</h2>
+			<div class="male">
+				<input id="gender1" name="gender" value="1" type="radio" class='sex'>
+				<label for="gender1">Мужчина</label>
+			</div>
+			<div class="female">
+				<input id="gender2" name="gender" value="2" type="radio" class='sex'>
+				<label for="gender2">Женщина</label>
+			</div>
+		</div>
+		<div class="float">
+			<label for="age" class="age">Возраст<sub>лет</sub></label>
+			<br>
+			<input id="age" type="text" name="age" class="age" placeholder="0">
+		</div>
+		<div class="float">
+			<label for="height">Рост<sub>см</sub></label>
+			<br>
+			<input id="height" type="text" name="height" placeholder="0">
+		</div>
+		<div class="float" id="unfloat">
+			<label for="weight">Вес<sub>кг</sub></label>
+			<br>
+			<input id="weight" type="text" name="weight" placeholder="0">
+		</div>
+		<div class="clear"></div>
+		<div class="activity">
+			<h2 class="act">Физическая активность</h2>
+			<input id="min" name="choice" type="radio" class='level'>
+			<label for="min">Минимальная</label>
+			<p>Сидячая работа и нет физических нагрузок</p>
+			<input id="low" name="choice" type="radio" class='level'>
+			<label for="low">Низкая</label>
+			<p>Редкие, нерегулярные тренировки, активность в быту</p>
+			<input id="mid" name="choice" type="radio" class='level'>
+			<label for="mid">Средняя</label>
+			<p>Тренировки 3-5 раз в неделю</p>
+			<input id="high" name="choice" type="radio" class='level'>
+			<label for="high">Высокая</label>
+			<p>Тренировки 6-7 раз в неделю</p>
+		</div>
+		<div class="end">
+			<button class="send" id='sub'>Посчитать</button>
+		</div>
+		<p id='res'></p>
+	</section>
+	<script src='calories.js'></script>
+</body>
+
+</html>

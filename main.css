@@ -1,0 +1,115 @@
+@font-face {
+	font-family: Garamond;
+	src: url("Garamond.woff2") format("woff2"), url("Garamond.woff") format("woff");
+}
+body {
+	background: #FF4500;
+	font-family: Garamond;
+}
+section#wrapper {
+	height: 700px;
+	width: 500px;
+	background: #fff;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+h2.gender {
+	margin-left: 50px;
+}
+div.male {
+	margin-left: 70px;
+	float: left;
+	border: 1px solid #FF4500;
+	border-radius: 5px;
+	transition-duration: 1s;
+	font-size: 150%;
+}
+div.female {
+	border: 1px solid #FF4500;
+	margin-right: 0px;
+	margin-left: 280px;
+	border-radius:5px;
+	transition-duration: 1s;
+	font-size: 150%;
+	width: 150px;
+}
+div.male:hover {
+	background: #FF4500;
+	color: #fff;
+}
+div.female:hover {
+	background: #FF4500;
+	color: #fff;
+}
+div.float label{
+	font-weight: bold;
+	font-size: 150%;
+}
+div.float {
+	margin-top: 80px;
+	margin-left: 50px;
+	float: left;
+}
+div.float label sub {
+	color: #808080;
+	font-size: 50%;
+}
+div.float input {
+	border-radius: 5px;
+	width: 50px;
+	height: 30px;
+	font-size: 200%;
+	text-align: center;
+}
+div#unfloat {
+	margin-left: 80px;
+}
+div.clear {
+	clear: both;
+}
+h2.act {
+	margin-left: 50px;
+	font-size: 200%;
+	margin-top: 50px;
+}
+div.activity input{
+	margin-left: 50px;
+}
+div.activity label {
+	font-size: 150%;
+	margin-left: 10px;
+}
+div.activity p {
+	font-size: 100%;
+	margin-left: 82px;
+	color: #808080;
+	margin-top: 0;
+}
+div.activity label:hover {
+	color: #FF4500;
+}
+div.end {
+	margin: 0 auto;
+}
+div.end button.send {
+	margin-left: 85px;
+	margin-top: 60px;
+	font-size: 150%;
+	border-radius: 10px;
+	transition-duration: 0.8s;
+	border: none;
+	text-align: center;
+	margin-left: 180px; 
+}
+div.end button.send:hover {
+	background: #FF4500;
+	color: #fff;
+}
+p#res {
+	font-size: 100%;
+	color: #FF4500;
+	text-align: center;
+}
+p#res:hover {
+	color: black;
+}
